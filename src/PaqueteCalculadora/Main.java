@@ -94,7 +94,7 @@ public class Main{
           break;
 
         default: // Opciones invalidas
-          System.out.println("Error. La entrada \""+entrada+"\" no es una opcion valida.");
+          System.out.println("Error. La entrada \""+entrada+"\" no es una opcion valida.\n");
           break;
       } // End switch
     }while(!entrada.equals("0"));
