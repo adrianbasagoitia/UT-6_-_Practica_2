@@ -50,6 +50,14 @@ public class Calculadora{
   } // End metodo restar
 
   /* *********************************************************************** */
+  /**
+   * Metodo que divide dos numeros enteros.
+   * @param n1 El primero de los operandos.
+   * @param n2 El segundo de los operandos.
+   * @return El resultado de la division de los dos operandos. Si el segundo operando es 0,
+   * el metodo devuelve 0.
+   */
+
   public double dividir(int n1, int n2){
     if(n2 == 0)
       return 0;
