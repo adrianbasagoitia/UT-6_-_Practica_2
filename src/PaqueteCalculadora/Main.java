@@ -12,13 +12,14 @@ public class Main{
   /* ******************************* Methods ******************************* */
   public static void main(String[]args){
     /* Local variables */
+    Calculadora c = new Calculadora();
 
     /* local code */
-    menu();
+    menu(c);
   } // End Main
 
   /* *********************************************************************** */
-  public static void menu(){
+  public static void menu(Calculadora c){
     /* Local variables */
     String entrada;
 
@@ -47,23 +48,23 @@ public class Main{
      * validas o invalidas */
     switch(entrada){
       case "0": // Salir
-        System.out.println();
+        System.out.println("Adios.\n");
         break;
 
       case "1": // Sumar
-        System.out.println();
+        System.out.println(c.sumar(pedirNumero(), pedirNumero()));
         break;
 
       case "2": // Restar
-        System.out.println();
+        System.out.println(c.restar(pedirNumero(), pedirNumero()));
         break;
 
       case "3": // Multiplicar
-        System.out.println();
+        System.out.println(c.multiplicar(pedirNumero(), pedirNumero()));
         break;
 
       case "4": // Dividir
-        System.out.println();
+        System.out.println(c.dividir(pedirNumero(), pedirNumero()));
         break;
 
       default: // Opciones invalidas
@@ -71,4 +72,35 @@ public class Main{
         break;
     } // End switch
   } // End menu
+
+  /* *********************************************************************** */
+  public static int pedirNumero(){
+    /* Local variables */
+    boolean valido;
+    String entrada;
+    int num = -1;
+
+    /* Local code */
+    do{
+      valido = true;
+      do{
+        System.out.println("Introduzca un numero entero: ");
+        entrada = scan.nextLine();
+
+        if(entrada.isEmpty())
+          System.out.println("Error. La entrada no puede ser vacia");
+      }while(entrada.isEmpty());
+      
+      /* Comprobacion de que la entrada introducida es un numero entero */
+      try{
+        num = Integer.parseInt(entrada);
+      }catch(Exception e){
+        System.out.println("Error. La entrada \""+entrada+"\" no es un numero entero.\n");
+        valido = false;
+      } // End try-catch
+    }while(!valido);
+
+    // Devolver numero
+    return num;
+  } // End pedirNumero
 } // End class
