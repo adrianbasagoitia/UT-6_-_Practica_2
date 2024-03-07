@@ -35,7 +35,7 @@ public class Calculadora{
    * @return El resultado de la resta de los dos operandos.
    */
   public int restar(int n1, int n2){
-    return n1+n2;
+    return n1-n2;
   } // End metodo restar
 
   /* *********************************************************************** */
