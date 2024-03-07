@@ -91,7 +91,7 @@ public class Main{
    * Metodo que pedira un numero al usuario por entrada estandar y comprobara su validez.
    * @return Un numero entero valido para el programa.
    */
-  public static int pedirNumero(){
+  public static int pedirNumero(String orden){
     /* Local variables */
     boolean valido;
     String entrada;
@@ -102,7 +102,7 @@ public class Main{
       valido = true; // Refrescar el valor de la variable.
       do{ // Repetir mientra la entrada sea vacia
         /* Pedir un numero al usuario por entrada estandar */
-        System.out.println("Introduzca un numero entero: ");
+        System.out.println("Introduzca el "+orden+" numero entero: ");
         entrada = scan.nextLine();
 
         /* Si la entrada es vacia, informar al usuario */
