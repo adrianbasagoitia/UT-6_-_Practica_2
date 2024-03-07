@@ -47,7 +47,7 @@ public class Calculadora{
    */
   public int multiplicar(int n1, int n2){
     return n1*n2;
-  } // End metodo restar
+  } // End metodo multiplicacion
 
   /* *********************************************************************** */
   /**
@@ -62,5 +62,5 @@ public class Calculadora{
       return 0;
     else
       return (double)n1/(double)n2;
-  } // End metodo restar
+  } // End metodo dividir
 } // End class
