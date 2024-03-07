@@ -57,7 +57,6 @@ public class Calculadora{
    * @return El resultado de la division de los dos operandos. Si el segundo operando es 0,
    * el metodo devuelve 0.
    */
-
   public double dividir(int n1, int n2){
     if(n2 == 0)
       return 0;
