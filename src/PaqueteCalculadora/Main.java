@@ -121,7 +121,7 @@ public class Main{
 
         /* Si la entrada es vacia, informar al usuario */
         if(entrada.isEmpty())
-          System.out.println("Error. La entrada no puede ser vacia");
+          System.out.println("Error. La entrada no puede ser vacia.\n");
       }while(entrada.isEmpty());
       
       /* Comprobacion de que la entrada introducida es un numero entero */
