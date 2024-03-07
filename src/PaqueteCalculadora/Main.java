@@ -116,7 +116,7 @@ public class Main{
       valido = true; // Refrescar el valor de la variable.
       do{ // Repetir mientra la entrada sea vacia
         /* Pedir un numero al usuario por entrada estandar */
-        System.out.println("Introduzca el "+orden+" numero entero: ");
+        System.out.print("\nIntroduzca el "+orden+" numero entero: ");
         entrada = scan.nextLine();
 
         /* Si la entrada es vacia, informar al usuario */
