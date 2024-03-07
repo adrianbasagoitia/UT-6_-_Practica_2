@@ -36,6 +36,7 @@ public class Main{
     /* Local variables */
     String entrada;
     int num1, num2, res;
+    double resD;
 
     /* Local code */
     do{ // Repetir mientras el usuario no intrduzca un 0 (Salir)
@@ -56,47 +57,47 @@ public class Main{
         if(entrada.isEmpty())
           System.out.println("Error. La entrada no puede ser vacia.");
       }while(entrada.isEmpty());
+
+      /* Filtrar la opcion introducida entre todas las posibles,
+       * validas o invalidas */
+      switch(entrada){
+        case "0": // Salir
+          System.out.println("Adios.\n");
+          break;
+
+        case "1": // Sumar
+          num1 = pedirNumero("Primer");
+          num2 = pedirNumero("Segundo");
+          res = c.sumar(num1, num2);
+          System.out.println(num1+" + "+num2+" = "+res);
+          break;
+
+        case "2": // Restar
+          num1 = pedirNumero("Primer");
+          num2 = pedirNumero("Segundo");
+          res = c.restar(num1, num2);
+          System.out.println(num1+" - "+num2+" = "+res);
+          break;
+
+        case "3": // Multiplicar
+          num1 = pedirNumero("Primer");
+          num2 = pedirNumero("Segundo");
+          res = c.multiplicar(num1, num2);
+          System.out.println(num1+" * "+num2+" = "+res);
+          break;
+
+        case "4": // Dividir
+          num1 = pedirNumero("Primer");
+          num2 = pedirNumero("Segundo");
+          resD = c.dividir(num1, num2);
+          System.out.printf("%.3f",resD);
+          break;
+
+        default: // Opciones invalidas
+          System.out.println("Error. La entrada \""+entrada+"\" no es una opcion valida.");
+          break;
+      } // End switch
     }while(!entrada.equals("0"));
-
-    /* Filtrar la opcion introducida entre todas las posibles, 
-     * validas o invalidas */
-    switch(entrada){
-      case "0": // Salir
-        System.out.println("Adios.\n");
-        break;
-
-      case "1": // Sumar
-        num1 = pedirNumero("Primer");
-        num2 = pedirNumero("Segundo");
-        res = c.sumar(num1, num2);
-        System.out.println(num1+" + "+num2+" = "+res);
-        break;
-
-      case "2": // Restar
-        num1 = pedirNumero("Primer");
-        num2 = pedirNumero("Segundo");
-        res = c.restar(num1, num2);
-        System.out.println(num1+" - "+num2+" = "+res);
-        break;
-
-      case "3": // Multiplicar
-        num1 = pedirNumero("Primer");
-        num2 = pedirNumero("Segundo");
-        res = c.multiplicar(num1, num2);
-        System.out.println(num1+" * "+num2+" = "+res);
-        break;
-
-      case "4": // Dividir
-        num1 = pedirNumero("Primer");
-        num2 = pedirNumero("Segundo");
-        res = c.dividir(num1, num2);
-        System.out.println(num1+" / "+num2+" = "+res);
-        break;
-
-      default: // Opciones invalidas
-        System.out.println("Error. La entrada \""+entrada+"\" no es una opcion valida.");
-        break;
-    } // End switch
   } // End menu
 
   /* *********************************************************************** */
