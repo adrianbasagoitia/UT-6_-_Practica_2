@@ -42,7 +42,7 @@ public class Main{
     do{ // Repetir mientras el usuario no intrduzca un 0 (Salir)
       do{ // Repetir mientras la entrada sea vacia
         /* Imprimir menu principal */
-        System.out.println("Menu");
+        System.out.println("\nMenu");
         System.out.println("1. - Sumar.");
         System.out.println("2. - Restar.");
         System.out.println("3. - Multiplicar.");
