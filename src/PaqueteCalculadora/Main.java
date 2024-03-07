@@ -35,6 +35,7 @@ public class Main{
   public static void menu(Calculadora c){
     /* Local variables */
     String entrada;
+    int num1, num2, res;
 
     /* Local code */
     do{ // Repetir mientras el usuario no intrduzca un 0 (Salir)
@@ -65,7 +66,10 @@ public class Main{
         break;
 
       case "1": // Sumar
-        System.out.println(c.sumar(pedirNumero(), pedirNumero()));
+        num1 = pedirNumero("Primer");
+        num2 = pedirNumero("Segundo");
+        res = c.sumar(num1, num2);
+        System.out.println(num1+" + "+num2+" = "+res);
         break;
 
       case "2": // Restar
