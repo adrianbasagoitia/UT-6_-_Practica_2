@@ -91,6 +91,7 @@ public class Main{
           num2 = pedirNumero("Segundo");
           resD = c.dividir(num1, num2);
           System.out.printf("%.3f",resD);
+          System.out.println();
           break;
 
         default: // Opciones invalidas
