@@ -5,7 +5,7 @@ package PaqueteCalculadora;
 
 
 /* ******************************* Class ********************************* */
-public Class Main{
+public class Main{
   /* ******************************* Methods ******************************* */
   public static void main(String[]args){
 
