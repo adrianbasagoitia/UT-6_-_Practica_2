@@ -73,15 +73,24 @@ public class Main{
         break;
 
       case "2": // Restar
-        System.out.println(c.restar(pedirNumero(), pedirNumero()));
+        num1 = pedirNumero("Primer");
+        num2 = pedirNumero("Segundo");
+        res = c.restar(num1, num2);
+        System.out.println(num1+" - "+num2+" = "+res);
         break;
 
       case "3": // Multiplicar
-        System.out.println(c.multiplicar(pedirNumero(), pedirNumero()));
+        num1 = pedirNumero("Primer");
+        num2 = pedirNumero("Segundo");
+        res = c.multiplicar(num1, num2);
+        System.out.println(num1+" * "+num2+" = "+res);
         break;
 
       case "4": // Dividir
-        System.out.println(c.dividir(pedirNumero(), pedirNumero()));
+        num1 = pedirNumero("Primer");
+        num2 = pedirNumero("Segundo");
+        res = c.dividir(num1, num2);
+        System.out.println(num1+" / "+num2+" = "+res);
         break;
 
       default: // Opciones invalidas
