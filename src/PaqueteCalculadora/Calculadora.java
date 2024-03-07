@@ -61,6 +61,6 @@ public class Calculadora{
     if(n2 == 0)
       return 0;
     else
-      return n1*n2;
+      return (double)n1/(double)n2;
   } // End metodo restar
 } // End class
