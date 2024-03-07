@@ -28,6 +28,12 @@ public class Calculadora{
   } // End metodo sumar
 
   /* *********************************************************************** */
+  /**
+   * Metodo que resta dos numeros enteros.
+   * @param n1 El primero de los operandos.
+   * @param n2 El segundo de los operandos.
+   * @return El resultado de la resta de los dos operandos.
+   */
   public int restar(int n1, int n2){
     return n1+n2;
   } // End metodo restar
