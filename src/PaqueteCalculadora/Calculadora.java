@@ -37,4 +37,9 @@ public class Calculadora{
   public int restar(int n1, int n2){
     return n1+n2;
   } // End metodo restar
+
+  /* *********************************************************************** */
+  public int multiplicar(int n1, int n2){
+    return n1*n2;
+  } // End metodo restar
 } // End class
