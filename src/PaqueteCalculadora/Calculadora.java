@@ -17,7 +17,6 @@ public class Calculadora{
   /* ***************************** Get & Set ******************************* */
 
   /* ******************************* Methods ******************************* */
-
   /**
    * Metodo que suma dos numeros enteros.
    * @param n1 El primero de los sumandos.
@@ -27,6 +26,9 @@ public class Calculadora{
   public int sumar(int n1, int n2){
     return n1+n2;
   } // End metodo sumar
-  /* *********************************************************************** */
 
+  /* *********************************************************************** */
+  public int restar(int n1, int n2){
+    return n1+n2;
+  } // End metodo restar
 } // End class
