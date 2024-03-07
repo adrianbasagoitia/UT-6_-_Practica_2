@@ -5,11 +5,20 @@ package PaqueteCalculadora;
 import java.util.Scanner;
 
 /* ******************************* Class ********************************* */
+/** Clase que sera el nucleo del programa */
 public class Main{
   /* ****************************** Constant ******************************* */
+  /** 
+   * Instancia de la clase scanner para introducir informacion al programa
+   * por entrada estandar.
+   */
   public static Scanner scan = new Scanner(System.in);
 
   /* ******************************* Methods ******************************* */
+  /**
+   * Metodo main principal del programa.
+   * @param args Argumentos del metodo.
+   */
   public static void main(String[]args){
     /* Local variables */
     Calculadora c = new Calculadora();
@@ -19,6 +28,10 @@ public class Main{
   } // End Main
 
   /* *********************************************************************** */
+  /**
+   * Metodo que simulara un menu, y sera la principal interfaz con el usuario.
+   * @param c Objeto de tipo calculadora para realziar los calculos.
+   */
   public static void menu(Calculadora c){
     /* Local variables */
     String entrada;
@@ -74,6 +87,10 @@ public class Main{
   } // End menu
 
   /* *********************************************************************** */
+  /**
+   * Metodo que pedira un numero al usuario por entrada estandar y comprobara su validez.
+   * @return Un numero entero valido para el programa.
+   */
   public static int pedirNumero(){
     /* Local variables */
     boolean valido;
@@ -81,12 +98,14 @@ public class Main{
     int num = -1;
 
     /* Local code */
-    do{
-      valido = true;
-      do{
+    do{ // Repetir mientras no se obtenga un numero entero valido
+      valido = true; // Refrescar el valor de la variable.
+      do{ // Repetir mientra la entrada sea vacia
+        /* Pedir un numero al usuario por entrada estandar */
         System.out.println("Introduzca un numero entero: ");
         entrada = scan.nextLine();
 
+        /* Si la entrada es vacia, informar al usuario */
         if(entrada.isEmpty())
           System.out.println("Error. La entrada no puede ser vacia");
       }while(entrada.isEmpty());
