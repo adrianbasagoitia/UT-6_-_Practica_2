@@ -12,7 +12,7 @@ public class Calculadora{
 
   /* ****************************** Builder ******************************** */
   public Calculadora(){
-
+    // Cinstructor por defecto, la clase no tiene atributos
   } // End builder
   /* ***************************** Get & Set ******************************* */
 
