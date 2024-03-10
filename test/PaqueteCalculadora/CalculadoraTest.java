@@ -44,4 +44,19 @@ class CalculadoraTest {
   public void restarTest(int n1, int n2, int res){
     assertEquals(res, c.restar(n1,n2));
   } // End sumarTest
+
+
+  /**
+   * Metodo parametrizado para comprobar el correcto funcionamiento del metodo
+   * multiplicar de la clase Calculadora
+   * @param n1 Primero de los operandos.
+   * @param n2 Segundo de los operandos.
+   * @param res Resultado esperado de la operacion.
+   */
+  @ParameterizedTest(name = "El resultado de la multiplicacion de {0} y {1} es {2}")
+  @CsvSource({"0,1,0", "100,-500, -50000","485, 15, 7275"})
+  public void multiplicarTest(int n1, int n2, int res){
+    assertEquals(res, c.multiplicar(n1,n2));
+  } // End sumarTest
+
 } // End Class Calculadora Test
