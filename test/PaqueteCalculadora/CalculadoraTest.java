@@ -30,7 +30,7 @@ class CalculadoraTest {
   public void sumarTest(int n1, int n2, int res){
     assertEquals(res, c.sumar(n1,n2));
   } // End sumarTest
-} // End Class Calculadora Test
+
 
   /**
    * Metodo parametrizado para comprobar el correcto funcionamiento del metodo
