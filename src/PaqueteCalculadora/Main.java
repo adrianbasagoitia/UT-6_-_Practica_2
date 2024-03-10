@@ -12,7 +12,9 @@ public class Main{
    * Instancia de la clase scanner para introducir informacion al programa
    * por entrada estandar.
    */
-  public static Scanner scan = new Scanner(System.in);
+  private static Scanner scan = new Scanner(System.in);
+  private static final String C1 = "Primer";
+  private static final String C2 = "Segundo";
 
   /* ******************************* Methods ******************************* */
   /**
@@ -66,29 +68,29 @@ public class Main{
           break;
 
         case "1": // Sumar
-          num1 = pedirNumero("Primer");
-          num2 = pedirNumero("Segundo");
+          num1 = pedirNumero(C1);
+          num2 = pedirNumero(C2);
           res = c.sumar(num1, num2);
           System.out.println(num1+" + "+num2+" = "+res);
           break;
 
         case "2": // Restar
-          num1 = pedirNumero("Primer");
-          num2 = pedirNumero("Segundo");
+          num1 = pedirNumero(C1);
+          num2 = pedirNumero(C2);
           res = c.restar(num1, num2);
           System.out.println(num1+" - "+num2+" = "+res);
           break;
 
         case "3": // Multiplicar
-          num1 = pedirNumero("Primer");
-          num2 = pedirNumero("Segundo");
+          num1 = pedirNumero(C1);
+          num2 = pedirNumero(C2);
           res = c.multiplicar(num1, num2);
           System.out.println(num1+" * "+num2+" = "+res);
           break;
 
         case "4": // Dividir
-          num1 = pedirNumero("Primer");
-          num2 = pedirNumero("Segundo");
+          num1 = pedirNumero(C1);
+          num2 = pedirNumero(C2);
           resD = c.dividir(num1, num2);
           System.out.printf("%.3f",resD);
           System.out.println();
