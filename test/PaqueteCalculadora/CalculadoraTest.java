@@ -27,7 +27,7 @@ class CalculadoraTest {
    */
   @ParameterizedTest(name = "El resultado de la suma de {0} y {1} es {2}")
   @CsvSource({"0,1,1", "100,-500, -400","485, 15, 500"})
-  public void sumarTest(int n1, int n2, int res){
+  void sumarTest(int n1, int n2, int res){
     assertEquals(res, c.sumar(n1,n2));
   } // End sumarTest
 
@@ -40,7 +40,7 @@ class CalculadoraTest {
    */
   @ParameterizedTest(name = "El resultado de la resta de {0} y {1} es {2}")
   @CsvSource({"0,1,-1", "100,-500, 600","485, 15, 470"})
-  public void restarTest(int n1, int n2, int res){
+  void restarTest(int n1, int n2, int res){
     assertEquals(res, c.restar(n1,n2));
   } // End sumarTest
 
@@ -53,7 +53,7 @@ class CalculadoraTest {
    */
   @ParameterizedTest(name = "El resultado de la multiplicacion de {0} y {1} es {2}")
   @CsvSource({"0,1,0", "100,-500, -50000","485, 15, 7275"})
-  public void multiplicarTest(int n1, int n2, int res){
+  void multiplicarTest(int n1, int n2, int res){
     assertEquals(res, c.multiplicar(n1,n2));
   } // End sumarTest
 
@@ -66,7 +66,7 @@ class CalculadoraTest {
    */
   @ParameterizedTest(name = "El resultado de la division de {0} y {1} es {2}")
   @CsvSource({"0,1,0", "100,-500, -0.2","485, 15, 32.33", "2,0,0"})
-  public void dividirTest(int n1, int n2, double res){
+  void dividirTest(int n1, int n2, double res){
     assertEquals(res, c.dividir(n1,n2), 0.1);
   } // End sumarTest
 
