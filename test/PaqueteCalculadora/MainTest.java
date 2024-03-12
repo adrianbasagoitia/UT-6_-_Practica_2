@@ -1,19 +1,19 @@
+/* ******************************* Package ******************************* */
 package PaqueteCalculadora;
 
+/* ******************************* Import ******************************** */
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.InputStream;
 import java.io.ByteArrayInputStream;
+
+/* ******************************* Class ********************************* */
+/**
+ * Clase principal para las pruebas de la clase Main
+ * @author Adrian
+ */
 class MainTest {
-
-  @org.junit.jupiter.api.BeforeEach
-  void setUp() {
-  }
-
-  @org.junit.jupiter.api.AfterEach
-  void tearDown() {
-  }
-
+  /* Local Methods */
   /**
    * Metodo de prueba que comprobara la validez del metodo pedirNumero
    * de la clase Main.
@@ -35,4 +35,4 @@ class MainTest {
     /* Comprobar el resultado */
     assertEquals(Integer.parseInt(numTexto), num);
   } // End pedirNumero
-}
+} // End class MainTest

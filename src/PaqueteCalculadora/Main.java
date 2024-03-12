@@ -5,7 +5,10 @@ package PaqueteCalculadora;
 import java.util.Scanner;
 
 /* ******************************* Class ********************************* */
-/** Clase que sera el nucleo del programa */
+/**
+ * Clase que sera el nucleo del programa
+ * @author Adrian
+ */
 public class Main{
   /* ****************************** Constant ******************************* */
   /** 
@@ -13,12 +16,15 @@ public class Main{
    * por entrada estandar.
    */
   private static Scanner scan = new Scanner(System.in);
+  /** Constante utilizada para la llamada a los metodos de la clase calculadora */
   private static final String C1 = "Primer";
+  /** Constante utilizada para la llamada a los metodos de la clase calculadora */
   private static final String C2 = "Segundo";
 
   /* ******************************* Methods ******************************* */
   /**
-   * Metodo main principal del programa.
+   * Metodo main principal del programa. Crea una instancia de la clase calculadora,
+   * y llama al metodo menu de esta misma clase.
    * @param args Argumentos del metodo.
    */
   public static void main(String[]args){
@@ -32,7 +38,7 @@ public class Main{
   /* *********************************************************************** */
   /**
    * Metodo que simulara un menu, y sera la principal interfaz con el usuario.
-   * @param c Objeto de tipo calculadora para realziar los calculos.
+   * @param c Objeto de tipo calculadora para realizar los calculos.
    */
   public static void menu(Calculadora c){
     /* Local variables */
@@ -41,7 +47,7 @@ public class Main{
     double resD;
 
     /* Local code */
-    do{ // Repetir mientras el usuario no intrduzca un 0 (Salir)
+    do{ // Repetir mientras el usuario no introduzca un 0 (Salir)
       do{ // Repetir mientras la entrada sea vacia
         /* Imprimir menu principal */
         System.out.println("\nMenu");
@@ -51,7 +57,7 @@ public class Main{
         System.out.println("4. - Dividir.");
         System.out.println("0. - Salir.");
         
-        /* Pedir al usuario opcion por entrada estandar */
+        /* Pedir al usuario la opcion por entrada estandar */
         System.out.print("\nIntroduzca la opcion que desea realizar (0 a 4): ");
         entrada = scan.nextLine();
 
@@ -107,6 +113,8 @@ public class Main{
   /**
    * Metodo que pedira un numero al usuario por entrada estandar y comprobara su validez.
    * @return Un numero entero valido para el programa.
+   * @throws NumberFormatException En caso de que la cadena de caracteres
+   * pedida al usuario, no contenga un numero entero valido.
    */
   public static int pedirNumero(String orden){
     /* Local variables */
@@ -130,7 +138,7 @@ public class Main{
       /* Comprobacion de que la entrada introducida es un numero entero */
       try{
         num = Integer.parseInt(entrada);
-      }catch(Exception e){
+      }catch(NumberFormatException e){
         System.out.println("Error. La entrada \""+entrada+"\" no es un numero entero.\n");
         valido = false;
       } // End try-catch
@@ -138,5 +146,7 @@ public class Main{
 
     // Devolver numero
     return num;
+
   } // End pedirNumero
+
 } // End class

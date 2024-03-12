@@ -5,15 +5,22 @@ package PaqueteCalculadora;
 
 
 /* ******************************* Class ********************************* */
+/**
+ * Clase que simula el funcionamiento de una calculadora, con las operaciones
+ * basicas de suma, resta, multiplicacion y division.
+ * @author Adrian
+ */
 public class Calculadora{
   /* ****************************** Constant ******************************* */
 
   /* ****************************** Attributes ***************************** */
 
   /* ****************************** Builder ******************************** */
+  /** Constructor por defecto */
   public Calculadora(){
-    // Cinstructor por defecto, la clase no tiene atributos
+    // Constructor por defecto, la clase no tiene atributos.
   } // End builder
+
   /* ***************************** Get & Set ******************************* */
 
   /* ******************************* Methods ******************************* */

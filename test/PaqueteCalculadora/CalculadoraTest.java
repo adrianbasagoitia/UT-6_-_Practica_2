@@ -1,23 +1,23 @@
+/* ******************************* Package ******************************* */
 package PaqueteCalculadora;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+/* ******************************* Import ******************************** */
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+/* ******************************* Class ********************************* */
+/**
+ * Clase principal para las pruebas de clase Calculadora
+ * @author Adrian
+ */
 class CalculadoraTest {
   /* Local variables */
+  /** Objeto de tipo Calculadora para realizar las pruebas */
   private final Calculadora c = new Calculadora();
-  @BeforeEach
-  void setUp() {
-  }
 
-  @AfterEach
-  void tearDown() {
-  }
-
+  /* *********************************************************************** */
+  /* Local Methods */
   /**
    * Metodo parametrizado para comprobar el correcto funcionamiento del metodo
    * sumar de la clase Calculadora
@@ -31,6 +31,7 @@ class CalculadoraTest {
     assertEquals(res, c.sumar(n1,n2));
   } // End sumarTest
 
+  /* *********************************************************************** */
   /**
    * Metodo parametrizado para comprobar el correcto funcionamiento del metodo
    * restar de la clase Calculadora
@@ -44,6 +45,7 @@ class CalculadoraTest {
     assertEquals(res, c.restar(n1,n2));
   } // End sumarTest
 
+  /* *********************************************************************** */
   /**
    * Metodo parametrizado para comprobar el correcto funcionamiento del metodo
    * multiplicar de la clase Calculadora
@@ -57,6 +59,7 @@ class CalculadoraTest {
     assertEquals(res, c.multiplicar(n1,n2));
   } // End sumarTest
 
+  /* *********************************************************************** */
   /**
    * Metodo parametrizado para comprobar el correcto funcionamiento del metodo
    * dividir de la clase Calculadora
@@ -70,4 +73,4 @@ class CalculadoraTest {
     assertEquals(res, c.dividir(n1,n2), 0.1);
   } // End sumarTest
 
-} // End Class Calculadora Test
+} // End Class CalculadoraTest
