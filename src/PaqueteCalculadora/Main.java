@@ -113,6 +113,8 @@ public class Main{
   /**
    * Metodo que pedira un numero al usuario por entrada estandar y comprobara su validez.
    * @return Un numero entero valido para el programa.
+   * @param orden Cadena de caracteres que indica si el numero, sera el primer
+   * o el segundo operando.
    * @throws NumberFormatException En caso de que la cadena de caracteres
    * pedida al usuario, no contenga un numero entero valido.
    */
